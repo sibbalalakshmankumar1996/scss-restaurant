@@ -1,0 +1,44 @@
+// $dark-color:#262626;
+$color-orange:orange;
+$color-white:#ffffff;
+$color-dark:#1A1A1A;
+$color-lightblue:#0d2436;
+$color-footer:#5a7184;
+$color-footerbg:#152c3e;
+$font1:'Dancing Script',cursive;
+$font2:'Josefin Sans',sans-serif;
+@mixin textStyles{
+    font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@mixin flexLayout{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+@mixin centering($topValue){
+    position:absolute;
+        top:$topValue;
+        left:50%;
+        transform:translate(-50%, -50%);
+        color:$color-white;
+}
+@mixin mainText($fontSize, $fontWeight){
+    color:$color-dark;
+    font-family:$font2;
+    font-size:$fontSize;
+    font-weight:$fontWeight;
+}
+@mixin footerText($fontSize, $fontWeight){
+    color:$color-footer;
+    font-family:$font2;
+    font-size:$fontSize;
+    font-weight:$fontWeight;
+}
+*{
+    padding:0px;
+    margin:0px;
+}
+
